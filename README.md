@@ -3,8 +3,8 @@
 - Unzip `dataset.zip` file to get `dataset.db`
 - `dataset.db` file contains only samples for training the classifier (readable/non-readable). Each row has `url` string, initial `html` string and the corresponding `class` number.
 - We use binary classification; Readable and non-readable samples belong to class 1 and 0 respectively. 
-- URLs and their corresponding labels are available in `/labels/labels.csv`
-- Labels are explained in `/labels/labels-legend.txt` 
+- URLs and their corresponding labels are available in `labels.csv`
+- Labels are explained in `labels-legend.txt` 
 - D1, D2, and D3 refer to article, random, and landing pages (more details can be found in the paper)
 
 ## Classifier Performance Result
