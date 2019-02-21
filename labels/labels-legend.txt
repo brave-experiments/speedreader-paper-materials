@@ -1,0 +1,37 @@
+ Labels from column 3 of labels.csv
+ ---
+ y=readable
+ n=not readable (other)
+ l=list page
+ e=error page
+ s=signin / application page
+ o=other (i.e. not an HTML page)
+ ?=not sure / unclear
+ f=web forum (index)
+ g=web forum (single)
+ p=pornography
+ v=video content
+ i=image content
+ m=mobile, single page
+
+Further description of the above labels
+---
+readable = there is a subset of the document that could be presented in a reader mode
+list page = an index or landing page that exists to direct the user to other content
+error page = either a 4xx/5xx style error page, a page rendering error, or a "are you a bot" page
+signin / application page = primarily / most importantly a form (think the google home page)
+other (i.e. not an HTML page) = either a resource that isn't a HTML document, or something intended to be displayed in a sub frame
+not sure / unclear = I couldn't confidently tell, usually for language issues
+web forum (index) = something like a landing / index page of a forum (think something like phpbb or yahoo answers)
+web forum (single) = a page showing one comment in a forum
+pornography = duh
+video content = a page where the main / primary content is a video (e.g. a page on youtube or twitch)
+image content = think XKCD
+mobile, single page = something like a mobile landing page where a whole bunch of brief subsections are all equally weighed on the page
+
+
+The above are then grouped as follows
+---
+y,v,i,g = readable
+n,l,e,s,f,m = not readable
+e,o,? = discard from set
